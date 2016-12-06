@@ -1,7 +1,9 @@
 #ifndef _UAPI_LINUX_KERNEL_H
 #define _UAPI_LINUX_KERNEL_H
 
+#if defined __GLIBC__ || defined __KERNEL__
 #include <linux/sysinfo.h>
+#endif
 
 /*
  * 'kernel.h' contains some often-used function prototypes etc
